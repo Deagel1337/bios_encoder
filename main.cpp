@@ -22,9 +22,15 @@ std::string xor_strings(const std::string& str1, const std::string& str2) {
 }
 
 int main() {
-    // Beispielaufruf
-    std::string string1 = "7B1394A6073A29CDD2601AF45C87ED1A07AEAE41DCD40A68ABFBFA0E55A2B0350BC9665CC1EF1C837716D2A92D3D88D0E3633EF7998AF41D4FB1AA4405D8606B";
-    std::string string2 = "5B93B62611BA6C4DC7E022747D07D89A332E8EC1E95444E89F7BFA0E55A2B0350BC9665CC1EF1C837716D2A92D3D88D0E3633EF7998AF41D4FB1AA4405D8606B";
+    std::string string1;
+    std::string string2;
+
+    std::cout << "String 1: " << string1 << std::endl;
+    std::cin >> string1;
+    
+    std::cout << "String 2: " << string2 << std::endl;
+    std::cin >> string2;
+    
     std::string result = xor_strings(string1, string2);
 
     std::cout << "String 1: " << string1 << std::endl;
